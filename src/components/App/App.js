@@ -17,11 +17,13 @@ function App() {
   return (
     <div className="App">
 
-      <div>
+      <div className='main'>
+        <div>
         <h2>Counter</h2>
         <h1>{count}</h1>
         <button onClick={handleClickPlus} className='plus'>Plus +</button>
         <button onClick={handleClickMinus} className='minus'>- Minus</button>
+        </div>
       </div>
 
     </div>
