@@ -20,3 +20,23 @@ code {
   height: 100vh;
   text-align: center;
 }
+
+h1 {
+  color: #000;
+  font-size: 7rem;
+  margin: 0;
+  margin-bottom: 20px;
+}
+  
+.plus {
+    color: #2a9d8f;
+  }
+.minus {
+    color: #e63946;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #556581;
+  }

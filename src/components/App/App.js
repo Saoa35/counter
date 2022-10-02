@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import '../../index.scss'
+import '../../index.css'
 
 function App() {
 
@@ -19,8 +19,8 @@ function App() {
 
       <h2>Counter</h2>
       <h1>{count}</h1>
-      <button onClick={handleClickPlus}>Plus +</button>
-      <button onClick={handleClickMinus}>- Minus</button>
+      <button onClick={handleClickPlus} className='plus'>Plus +</button>
+      <button onClick={handleClickMinus} className='minus'>- Minus</button>
 
     </div>
   );
