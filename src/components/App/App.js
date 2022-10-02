@@ -4,7 +4,7 @@ import '../../index.css'
 
 function App() {
 
-  const [count, setCount] = useState(null);
+  const [count, setCount] = useState(0);
 
   const handleClickPlus = () => {
     setCount(count + 1);
@@ -17,10 +17,12 @@ function App() {
   return (
     <div className="App">
 
-      <h2>Counter</h2>
-      <h1>{count}</h1>
-      <button onClick={handleClickPlus} className='plus'>Plus +</button>
-      <button onClick={handleClickMinus} className='minus'>- Minus</button>
+      <div>
+        <h2>Counter</h2>
+        <h1>{count}</h1>
+        <button onClick={handleClickPlus} className='plus'>Plus +</button>
+        <button onClick={handleClickMinus} className='minus'>- Minus</button>
+      </div>
 
     </div>
   );
