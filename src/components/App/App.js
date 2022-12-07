@@ -10,7 +10,9 @@ function App() {
   };
 
   const handleClickMinus = () => {
-    setCount((prev) => prev - 1);
+    if (count > 0) {
+      setCount((prev) => prev - 1);
+    }
   };
 
   return (
@@ -24,7 +26,7 @@ function App() {
           </button>
           <button
             onClick={handleClickMinus}
-            className={count < 0 ? disabled : "minus"}
+            className={count === 0 ? "disabled" : "minus"}
           >
             - Minus
           </button>
