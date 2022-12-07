@@ -22,7 +22,10 @@ function App() {
           <button onClick={handleClickPlus} className="plus">
             Plus +
           </button>
-          <button onClick={handleClickMinus} className="minus">
+          <button
+            onClick={handleClickMinus}
+            className={count < 0 ? disabled : "minus"}
+          >
             - Minus
           </button>
         </div>
